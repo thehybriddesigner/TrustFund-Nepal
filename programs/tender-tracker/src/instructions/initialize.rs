@@ -30,4 +30,5 @@ pub fn handle_initialize(ctx: Context<Initialize>) -> Result<()> {
 
     msg!("Hello, world! Counter initialized");
     Ok(())
+
 }
