@@ -1,13 +1,5 @@
 use anchor_lang::prelude::*;
 
-#[account]
-#[derive(InitSpace)]
-pub struct Counter {
-    pub count: u64,
-    pub authority: Pubkey,
-    pub bid_amount: u64,
-
-}
 
 #[derive(InitSpace, AnchorSerialize, AnchorDeserialize, Clone, Copy, PartialEq)]
 pub enum Custom {
